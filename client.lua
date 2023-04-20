@@ -1,3 +1,4 @@
+--1.)
 function reMap(value, low1, high1, low2, high2)
 	return low2 + (value - low1) * (high2 - low2) / (high1 - low1)
 end
@@ -24,3 +25,7 @@ function getHudCursorPos()
 		return false
 	end
 end
+--2.)
+local screen = guiGetScreenSize() --Oyuncunun Çözünürlüğünü Çekiyor
+local w, h = 600, 400 --Panel Boyutları Giriliyor
+local x, y = (screen.x-w)/2, (screen.y-h)/2 --Çözünürlükler ye Bölünüyor
